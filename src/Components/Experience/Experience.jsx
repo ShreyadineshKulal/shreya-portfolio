@@ -46,10 +46,10 @@ const Experience = () => {
                             alt={experience.name}
                             className="experience-thumbnail"
                         />
-                        <div>
+                        {/* <div>
                             <h3>{experience.name}</h3>
                             <p>{experience.company}</p>
-                        </div>
+                        </div> */}
                     </div>
                 ))}
             </div>
