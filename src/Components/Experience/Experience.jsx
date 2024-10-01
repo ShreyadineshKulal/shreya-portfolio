@@ -5,7 +5,7 @@ import project_img from '../../assets/project_thumbnail.png';
 import company_logo1 from '../../assets/company_logo.png'; 
 import arrow_icon from '../../assets/arrow_icon.svg';
 import report_pdf from '../../assets/Shreya_Dinesh_Kulal_220970078_Final_Report_MCA_complete.pdf'; 
-import notepad from '../../assets/notepad.txt';
+import notepad from '../../assets/notepad.pdf';
 
 const experiences = [
     {
