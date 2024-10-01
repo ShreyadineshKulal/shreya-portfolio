@@ -1,0 +1,268 @@
+.myexperience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin: 80px 170px;
+}
+
+.myexperience-title {
+    position: relative;
+}
+
+.myexperience-title h1 {
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.myexperience-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 150px;
+}
+
+/* Grid container - Similar to Certification section */
+.myexperience-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.experience-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    width: 300px;
+}
+
+.experience-thumbnail {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.experience-thumbnail:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.experience-card-container h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -190px;
+}
+
+.experience-card-container p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* Popup styling */
+.experience-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.experience-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%; /* Use percentage for better responsiveness */
+    max-width: 500px; /* Maximum width for larger screens */
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Optional shadow for better visibility */
+}
+
+.experience-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.view-github,
+.download-report,
+.about-project {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    flex: 1;
+    text-align: center;
+}
+
+.about-project {
+    background-color: transparent;
+    color: purple;
+    border: 2px solid purple;
+}
+
+.view-github:hover,
+.download-report:hover {
+    background-color: #0056b3;
+}
+
+.about-project:hover {
+    background-color: rgba(128, 0, 128, 0.1);
+    color: darkviolet;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Media Queries for responsiveness */
+
+/* Large tablets and below */
+@media (max-width: 1200px) {
+    .myexperience {
+        margin: 60px 120px;
+    }
+
+    .experience-card-container {
+        width: 250px;
+    }
+
+    .experience-thumbnail {
+        height: 180px;
+    }
+
+    .experience-card {
+        width: 90%; /* Make the width responsive */
+    }
+}
+
+/* Tablets and smaller screens */
+@media (max-width: 992px) {
+    .myexperience {
+        margin: 40px 80px;
+    }
+
+    .experience-card-container {
+        width: 220px;
+    }
+
+    .experience-thumbnail {
+        height: 160px;
+    }
+
+    .experience-card {
+        width: 90%; /* Adjust for smaller devices */
+    }
+
+    .myexperience-title h1 {
+        font-size: 40px;
+    }
+}
+
+/* Small screens and mobile devices */
+@media (max-width: 768px) {
+    .myexperience {
+        margin: 20px 40px;
+    }
+
+    .myexperience-title h1 {
+        font-size: 35px;
+    }
+
+    .experience-card-container {
+        width: 180px;
+    }
+
+    .experience-thumbnail {
+        height: 140px;
+    }
+
+    .experience-card {
+        width: 90%; /* Responsive width */
+    }
+}
+
+/* Extra small devices (phones) */
+@media (max-width: 576px) {
+    .myexperience {
+        margin: 10px 20px;
+    }
+
+    .myexperience-title h1 {
+        font-size: 30px;
+    }
+
+    .experience-card-container {
+        width: 150px;
+    }
+
+    .experience-thumbnail {
+        height: 120px;
+    }
+
+    .experience-card {
+        width: 30%; /* Ensures card fits well */
+        padding: 15px;
+    }
+
+    .experience-details h2 {
+        font-size: 18px;
+    }
+
+    .experience-details p {
+        font-size: 14px;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .view-github,
+    .download-report,
+    .about-project {
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+
+    .close-button {
+        font-size: 20px;
+    }
+}

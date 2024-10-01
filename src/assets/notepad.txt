@@ -1,0 +1,36 @@
+Jan 2024 - July 2024 (6 months) | Full-time
+
+DESCRIPTION:
+--------------
+This project, developed during my internship, is a web-based application designed to assist patients who face transportation challenges or have mobility issues. The platform allows patients to book appointments with doctors for home visits. If a doctor is available at the requested time slot, they can accept the appointment; otherwise, they can redirect the appointment to another doctor or reject it. Patients receive notifications via email about the status of their appointments. After a successful home visit and treatment, patients can pay using the cash-on-delivery method. Once payment is confirmed, the admin generates the bill and sends it to the patient's email, along with the prescription.
+
+I developed the full-stack admin-side module for the project, which includes a login ,comprehensive dashboard. My responsibilities included managing other admins, patients, appointments, doctors, medical history, payment history, and various other functionalities.
+
+Admin Management: The super admin has the ability to add, edit, and delete other admins, ensuring proper role distribution and management within the system. Appointment and Patient Management: Admins can add patients, book appointments on their behalf, and handle the scheduling process, including accepting or rejecting appointments if doctors are unavailable. Admins can also view a calendar of upcoming appointments.Comprehensive Doctor and History Management: Admins can manage doctor profiles, including adding, viewing, and deleting doctors. They can also view patients' medical histories, payment histories, and generate bills after successful appointments, ensuring all necessary records are maintained.
+
+TECHNOLOGIES USED:
+Git
+Teamwork
+React.js
+NodeJs
+ExpressJs
+MongoDB
+------------------------------------------------------------------------------------------------
+
+ABOUT COMPANY:
+-----------------
+'SOFTIONIK provide quality information technology services and exceptional service, allowing businesses to focus on their core processes. Those services encompass all aspects of information technology: training, consulting and planning to managed services.'
+
+Website
+--------
+https://softionik.com/
+
+Industry:
+Information Technology & Services
+Company size:
+11-50 employees
+Headquarters:
+Mangaluru, Karnataka
+Founded:
+2018
+

@@ -1,0 +1,226 @@
+/* Base styles (for desktop and large screens) */
+.aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.aboutme-title {
+    position: relative;
+}
+
+.aboutme-title h1 {
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.aboutme-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 150px;
+}
+
+.aboutme-sections {
+    display: flex;
+    gap: 70px;
+}
+
+.aboutme-right {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.aboutme-para {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 19px;
+    font-weight: 300;
+}
+
+.aboutme-skills {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aboutme-skill-columns {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.aboutme-skill-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.aboutme-skill-divider {
+    width: 2px;
+    height: 100%;
+    background: #FFFFFF; 
+    opacity: 0.3; 
+}
+
+.aboutme-skill {
+    display: flex;
+    gap: 1px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.aboutme-skill p {
+    min-width: 150px;
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.aboutme-skill hr {
+    outline: none;
+    border: none;
+    height: 8px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DF8908 0.36%, #B415FF 102.06%);
+}
+
+.aboutme-achievement {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.aboutme-achievements {
+    display: flex;
+    width: 110%;
+    justify-content: space-around;
+    margin-bottom: 80px;
+}
+
+.aboutme-achievement h1 {
+    font-size: 40px;
+    font-weight: 500;
+    background: linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutme-achievement p {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.aboutme-skill:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.aboutme-achievement:hover {
+    transform: scale(1.20);
+    transition: 0.5s;
+}
+
+
+/* Media Query for Tablets (768px - 1024px) */
+@media only screen and (max-width: 1024px) {
+    .aboutme {
+        margin: 60px 80px;
+        gap: 50px;
+    }
+
+    .aboutme-title h1 {
+        font-size: 40px;
+    }
+
+    .aboutme-sections {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .aboutme-title img {
+        width: 100px;
+    }
+
+    .aboutme-para {
+        font-size: 18px;
+    }
+
+    .aboutme-skill-columns {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .aboutme-achievements {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .aboutme-achievement h1 {
+        font-size: 35px;
+    }
+}
+
+
+/* Media Query for Mobile Devices (Max Width 767px) */
+@media only screen and (max-width: 767px) {
+    .aboutme {
+        margin: 40px 30px;
+        gap: 30px;
+    }
+
+    .aboutme-title h1 {
+        font-size: 30px;
+    }
+
+    .aboutme-title img {
+        width: 80px;
+    }
+
+    .aboutme-sections {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .aboutme-right {
+        gap: 30px;
+    }
+
+    .aboutme-para {
+        font-size: 16px;
+    }
+
+    .aboutme-skill-columns {
+        gap: 20px;
+    }
+
+    .aboutme-skill p {
+        min-width: auto;
+        font-size: 15px;
+    }
+
+    .aboutme-achievements {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .aboutme-achievement h1 {
+        font-size: 25px;
+    }
+
+    .aboutme-achievement p {
+        font-size: 14px;
+    }
+}

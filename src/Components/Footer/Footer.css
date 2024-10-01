@@ -1,0 +1,63 @@
+.footer {
+    margin: 50px 10%; /* Use percentage margins for better responsiveness */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column; /* Stack items for smaller screens */
+    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .footer-top {
+        flex-direction: row; /* Row direction for larger screens */
+    }
+}
+
+.footer-top-left {
+    display: flex;
+    align-items: center; /* Align logo and text vertically */
+    gap: 10px; /* Space between logo and text */
+}
+
+.footer-top-left p {
+    font-size: 1.25rem; /* Use rem for scalable sizes */
+    max-width: 400px; /* Limit max width */
+}
+
+.footer-top-right {
+    display: flex;
+    flex-direction: column; /* Stack for smaller screens */
+    align-items: center; /* Center align for smaller screens */
+}
+
+@media (min-width: 768px) {
+    .footer-top-right {
+        align-items: flex-start; /* Align left for larger screens */
+    }
+}
+
+.footer-top-right a {
+    display: flex; /* Flex for better alignment */
+    align-items: center; /* Center icon vertically */
+    gap: 10px; /* Space between icon and text */
+}
+
+.footer-top-right img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.footer-top-right p {
+    font-size: 1rem; /* Use rem for scalability */
+    text-align: center; /* Center text for smaller screens */
+}
+
+hr {
+    border: 2px solid #ccc;
+    margin-top: 10px;
+}
